@@ -56,7 +56,7 @@ Note: The Discord API refers to Discord servers as "guilds". This nomenclature i
 5. Install the bot in your server:
 
    1. Once you have the bot server running, you can install the bot to your server by heading over to your [Discord Developer Portal](https://discord.com/developers/applications).
-   2. Then, head over to the "OAuth2" tab and add the local endpoint to the "Redirects" section. For development, this should be something like `http://localhost:3000/api/oauth2/callback`. For production, this should be the deployed endpoint.
+   2. Then, head over to the "OAuth2" tab and add the local endpoint to the "Redirects" section. For development, this should be something like `http://localhost:3000/oauth2-callback`. For production, this should be the deployed endpoint.
    3. Once you've added the redirect, then you want to make sure you have all permissions defined in the OAuth2 URL Generator: `identify`, `guilds`, `applications.commands`, `bot`. We're keeping them strategically minimal, but if you want to add more permissions for future functionalities, this is where you'll need to do so.
    4. Then, select the redirect URL you want to work with. This is the URL that Discord will use to redirect the user after they have installed the bot, so it is the endpoint that kickstarts the event listeners within your application.
    5. In "Bot Permissions", make sure you have the following permissions selected:
